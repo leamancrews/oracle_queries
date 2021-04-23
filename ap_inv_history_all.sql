@@ -1,0 +1,4 @@
+SELECT *
+    FROM AP_INV_APRVL_HIST_ALL
+   WHERE Invoice_id = '1234567'
+ORDER BY 1;

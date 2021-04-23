@@ -1,0 +1,4 @@
+select requisition_number from por_requisition_headers_all where
+requisition_header_id in (select distinct requisition_header_id from
+por_requisition_lines_all where deliver_to_location_id is null and
+one_time_location_flag='Y');
