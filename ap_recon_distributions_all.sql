@@ -1,0 +1,7 @@
+SELECT *
+FROM AP_RECON_DISTRIBUTIONS_ALL
+WHERE check_id IN
+  (SELECT check_id
+    FROM AP_INVOICE_PAYMENTS_ALL
+    WHERE invoice_id = '124567'
+  );
