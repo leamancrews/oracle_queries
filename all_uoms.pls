@@ -1,2 +1,0 @@
-select uom_code,unit_of_measure
-from mtl_units_of_measure
